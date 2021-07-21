@@ -1,7 +1,6 @@
 FROM postgres:13.3-alpine
 
 ENV POSTGRES_PASSWORD=example
-ENV PORT = 8080
 
 EXPOSE 5432
 
