@@ -1,28 +1,25 @@
 -- @block
 CREATE TABLE "room"
 (
-    id int,
-    name char(100),
-    creator char(100),
-    code char(10),
-    PRIMARY KEY(id)
+    id INT PRIMARY KEY,
+    name varchar(100),
+    creator varchar(100),
+    code varchar(10)
 );
 -- @block
-CREATE TABLE "user"
+CREATE TABLE "users"
 (
-    id int,
-    name char(100),
-    pictureurl char(200),
-    roomid int,
-    PRIMARY KEY(id)
+    id SERIAL PRIMARY KEY,
+    name varchar(100),
+    pictureurl varchar(200),
+    roomid int
 );
 -- @block
 CREATE TABLE "message"
 (
-    id int,
-    sender char(100),
-    text char(100),
-    time char(50),
-    roomid int,
-    PRIMARY KEY(id)
+    id SERIAL PRIMARY KEY,
+    sender varchar(100),
+    text varchar(100),
+    time varchar(100),
+    roomid int
 );
